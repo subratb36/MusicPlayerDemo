@@ -122,9 +122,6 @@ public class MainActivity extends AppCompatActivity {
                     try {
                         Intent serviceIntent = new Intent(MainActivity.this, SongService.class);
                         serviceIntent.setAction(PlayerConstants.STARTFOREGROUND_ACTION);
-//                        if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.O){
-//                            MainActivity.this.startForegroundService(serviceIntent);
-//                        }else{
                             startService(serviceIntent);
 
                     } catch (Exception e) {
